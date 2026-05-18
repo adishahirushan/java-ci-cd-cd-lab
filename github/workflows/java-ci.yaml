@@ -1,0 +1,28 @@
+name: Java CI pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on ubuntu-lastest
+
+    steps:
+    -name: Checkout Repository
+     uses: actions/checkout@v4
+
+     -name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+        -name: compile java program
+         run: javac Main.java
+
+         -name: Run Java Program
+          run: java Main
+        
