@@ -21,8 +21,11 @@ jobs:
         java-version: '17'
 
         -name: compile java program
-         run: javac Main.java
+         run: javac *.java
 
          -name: Run Java Program
           run: java Main
+
+          -name:Run Test
+          run: java CalculatorTest
         
