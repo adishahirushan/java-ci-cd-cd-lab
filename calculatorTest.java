@@ -1,32 +1,31 @@
 public class calculatorTest{
-    public static void main(string args[]){
-        Calculator cal = new calculator();
-
-        if (calc.add(2, 3) == 5) {
+    public static void main(String args[]){
+        Calculator cal = new Calculator();
+        if (cal.add(2, 3) == 5) {
             System.out.println("Add Test Passed.");
         } else {
             System.out.println("Add Test Failed.");
         }
 
-        if (calc.subtract(5, 3) == 2) {
+        if (cal.subtract(5, 3) == 2) {
             System.out.println("Subtract Test Passed.");
         } else {
             System.out.println("Subtract Test Failed.");
         }
 
-        if (calc.multiply(4, 3) == 12) {
+        if (cal.multiply(4, 3) == 12) {
             System.out.println("Multiply Test Passed.");
         } else {
             System.out.println("Multiply Test Failed.");
         }
 
-        if (calc.divide(10, 2) == 5.0) {
+        if (cal.divide(10, 2) == 5.0) {
             System.out.println("Divide Test Passed.");
         } else {
             System.out.println("Divide Test Failed.");
         }
 
-        if (calc.modulus(10, 3) == 1) {
+        if (cal.modulus(10, 3) == 1) {
             System.out.println("Modulus Test Passed.");
         } else {
             System.out.println("Modulus Test Failed.");
