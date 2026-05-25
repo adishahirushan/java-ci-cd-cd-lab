@@ -1,6 +1,11 @@
 name: "Java Build Action"
 description: "Compile and run Java Program"
 
+inputs:
+  file-name:
+  discription: "java file name"
+  required: ture
+
 runs:
   using: "composite"
   steps:
