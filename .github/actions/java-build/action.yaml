@@ -11,11 +11,11 @@ runs:
   using: "composite"
   steps:
     - name: Compile Java Program
-      run: java -cp . ${{ inputs.file-name }}.java
+      run: java ${{ inputs.file-name }}.java
       shell: bash
 
     - name: Run Java Program
-      run: java -cp . ${{ inputs.file-name }}
+      run: java ${{ inputs.file-name }}
       shell: bash
 
 
