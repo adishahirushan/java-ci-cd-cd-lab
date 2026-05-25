@@ -3,8 +3,9 @@ description: "Compile and run Java Program"
 
 inputs:
   file-name:
-  discription: "java file name"
-  required: ture
+    description: "Java file name"
+    required: true
+    default: "CalculatorTest"
 
 runs:
   using: "composite"
@@ -14,5 +15,5 @@ runs:
       shell: bash
 
     - name: Run Java Program
-      run: java -cp . CalculatorTest
+      run: java -cp . ${{ inputs.file-name }}
       shell: bash
