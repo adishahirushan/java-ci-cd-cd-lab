@@ -7,7 +7,7 @@ runs:
 
 steps:
   - name: compile.java
-    run: javac Main.java 
+    run: javac *.java 
     shell: bash
 
   - name: Run Java
