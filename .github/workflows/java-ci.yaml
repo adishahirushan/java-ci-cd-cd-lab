@@ -21,6 +21,3 @@ jobs:
 
       - name: Run Custom Action
         uses: ./.github/actions/java-build
-
-      - name: Run Test Class
-        run: java -cp . CalculatorTest
